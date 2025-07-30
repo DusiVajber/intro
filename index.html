@@ -17,15 +17,54 @@
   <div id="uvod">
     <div id="deoslike">
       <img src="pictures/SpFrMuv.webp" alt="Uvod Image" id="slika">
-      <p class="tekst-preko-slike">stvorite digitalni identitet<br>povećajte privlačnost</p>
+      <p class="uvodnitekst" style="position: absolute; left: 0; margin-top: 197px; margin-left: 590px; color: white; z-index: 2; clip-path: none;">stvorite digitalni identitet<br>povecajte &nbsp;privlacnost&nbsp;</p>
     </div>
     <div id="tekstualnideo">
-      <p id="uvodnitekst">stvorite digitalni identitet<br>povecajte privlacnost</p>
+      <div style="position: relative; width: fit-content;">
+        <p class="uvodnitekst" style="color: #50361f; z-index: 1;">stvorite digitalni identitet<br>povecajte <mark id="privlacnostmark">&nbsp;privlacnost&nbsp;</mark></p>
+      </div>
+<script>
+  function updateWhiteTextClip() {
+    const blackText = document.getElementById('uvodnitekst-black');
+    const whiteText = document.getElementById('uvodnitekst-white');
+    const img = document.getElementById('slika');
+    if (!blackText || !whiteText || !img) return;
+    const textRect = blackText.getBoundingClientRect();
+    const imgRect = img.getBoundingClientRect();
+    // Calculate overlap area between text and image
+    const overlapLeft = Math.max(textRect.left, imgRect.left);
+    const overlapTop = Math.max(textRect.top, imgRect.top);
+    const overlapRight = Math.min(textRect.right, imgRect.right);
+    const overlapBottom = Math.min(textRect.bottom, imgRect.bottom);
+    if (overlapLeft < overlapRight && overlapTop < overlapBottom) {
+      // Overlap exists, set clip-path on white text
+      const left = overlapLeft - textRect.left;
+      const top = overlapTop - textRect.top;
+      const right = overlapRight - textRect.left;
+      const bottom = overlapBottom - textRect.top;
+      whiteText.style.clipPath = `inset(${top}px ${textRect.width - right}px ${textRect.height - bottom}px ${left}px)`;
+      whiteText.style.visibility = 'visible';
+    } else {
+      // No overlap, hide white text
+      whiteText.style.clipPath = 'none';
+      whiteText.style.visibility = 'hidden';
+    }
+  }
+  window.addEventListener('DOMContentLoaded', updateWhiteTextClip);
+  window.addEventListener('resize', updateWhiteTextClip);
+</script>
     </div>
   </div>
-  <div id="aboutus"></div>
+  <div id="aboutus">
+    <div id="nasloviprvitekst">
+      <div id="naslov" class="prvitekstovi"><p id="onama">O nama</p></div>
+      <div id="prvitekstholder"><p class="naslovizatekstove">Prvi naslov</p><p id="prvitekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam repudiandae quo porro cupiditate minima laudantium, illum rerum quasi soluta non unde magni, accusantium ipsam in maiores rem! Id, a veritatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, iure iusto saepe enim nulla vel voluptates deserunt quos dolore dolorum consequatur eum optio dignissimos natus, illum qui praesentium cupiditate rem?lorem</p></div>
+    </div>
+    <div id="drugitekstholder"><p class="naslovizatekstove">drugi nalsov</p><p id="drugitekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam repudiandae quo porro cupiditate minima laudantium, illum rerum quasi soluta non unde magni, accusantium ipsam in maiores rem! Id, a veritatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, iure iusto saepe enim nulla vel voluptates deserunt quos dolore dolorum consequatur eum optio dignissimos natus, illum qui praesentium cupiditate rem?lorem</p></div>
+    <div id="tecitekstholder"><p class="naslovizatekstove">treci naslov</p><p id="tecitekst">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam repudiandae quo porro cupiditate minima laudantium, illum rerum quasi soluta non unde magni, accusantium ipsam in maiores rem! Id, a veritatis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, iure iusto saepe enim nulla vel voluptates deserunt quos dolore dolorum consequatur eum optio dignissimos natus, illum qui praesentium cupiditate rem?lorem</p></div>
+  </div>
   <div id="tim"></div>
-  <div id="contact"></div>
+  <footer id="contact"></div>
 </body>
 </html>
 

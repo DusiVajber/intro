@@ -75,6 +75,10 @@ header p
 #deoslike
 {
   width: 60%;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  overflow: hidden;
 }
 
 #tekstualnideo
@@ -86,7 +90,7 @@ header p
   align-items: left;
 }
 
-#uvodnitekst
+.uvodnitekst
 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: rgb(0, 0, 0);
@@ -94,9 +98,9 @@ header p
   letter-spacing: 1px;
   text-align: right;
   display: inline-block;
+  margin-left: -170px;
   width: fit-content;
-  margin-left: -172px;
-  mix-blend-mode: difference;
+  width: 534px;
 }
 
 #deoslike
@@ -104,6 +108,7 @@ header p
   display: flex;
   flex-direction: row;
   justify-content: right;
+  overflow: hidden;
 }
 
 .tekst-preko-slike {
@@ -116,4 +121,105 @@ header p
   text-align: right;
   pointer-events: none;
   z-index: 2;
+
+}
+
+#privlacnostmark
+{
+  background-color: #674222;
+  color: white;
+  border-radius: 3px;
+}
+
+#aboutus
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+#nasloviprvitekst
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 280px;
+}
+
+.prvitekstovi {
+  width: 50%;
+  flex: 0 0 50%;
+  box-sizing: border-box;
+}
+
+#onama
+{
+  text-align: center;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #674222;
+}
+
+#prvitekst
+{
+  font-size: 1.4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #50361f;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  text-align: justify;
+}
+
+#drugitekstholder
+{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 280px;
+}
+
+#drugitekst
+{
+  font-size: 1.4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #50361f;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+#tecitekstholder
+{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  height: 280px;
+}
+
+#tecitekst
+{
+  font-size: 1.4rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: #50361f;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.naslovizatekstove
+{
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 1.7rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #674222;
 }
