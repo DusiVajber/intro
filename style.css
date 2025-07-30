@@ -1,0 +1,119 @@
+body
+{
+  margin: 0;
+}
+
+.welcome{
+  background-image: url("pictures/index.png");
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 641px;
+  width: 100%;
+}
+
+#attract{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 8rem;
+  margin: 0;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#kratakopis
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+#slika
+{
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 60px;
+  object-position:calc(20% - 20px);
+}
+
+#logo
+{
+  width: 52px;
+  height: 52px;
+  margin-left: 10px;
+}
+
+header
+{
+  height:  72px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header p
+{
+  color: #674222;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+  margin-left: 8px;
+}
+
+#uvod
+{
+  display: flex;
+   
+}
+
+#deoslike
+{
+  width: 60%;
+}
+
+#tekstualnideo
+{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+#uvodnitekst
+{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: right;
+  display: inline-block;
+  width: fit-content;
+  margin-left: -172px;
+  mix-blend-mode: difference;
+}
+
+#deoslike
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.tekst-preko-slike {
+
+  top: 60px;
+  right: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  color: white;
+  text-align: right;
+  pointer-events: none;
+  z-index: 2;
+}
