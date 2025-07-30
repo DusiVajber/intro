@@ -143,7 +143,7 @@ header p
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 280px;
+  height: 300px;
 }
 
 .prvitekstovi {
@@ -174,9 +174,10 @@ header p
 #drugitekstholder
 {
   display: flex;
-  align-items: center;
-  justify-content: left;
-  height: 280px;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  height: 300px;
 }
 
 #drugitekst
@@ -192,13 +193,12 @@ header p
   text-align: justify;
 }
 
-#tecitekstholder
-{
+#tecitekstholder {
   display: flex;
   flex-direction: column;
-  align-items: right;
+  align-items: flex-end;
   justify-content: center;
-  height: 280px;
+  height: 300px;
 }
 
 #tecitekst
