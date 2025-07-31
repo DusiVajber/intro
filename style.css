@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+body
+{
+  overflow-x: hidden;;
+}
+
 #slika-bgbox {
   box-shadow: 0 8px 32px rgba(80, 54, 31, 0.10), 0 1.5px 10.6px rgba(80,54,31,0.08);
 }
@@ -81,6 +86,7 @@ header p
 {
   display: flex;
   padding-bottom: 40px;
+  overflow: hidden;
 }
 
 #deoslike
@@ -147,6 +153,7 @@ header p
   display: flex;
   flex-direction: column;
   padding-top: 0px;
+  overflow: hidden;
 }
 
 #nasloviprvitekst
@@ -154,7 +161,7 @@ header p
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 300px;
+  height: 200px;
 }
 
 .prvitekstovi {
@@ -188,7 +195,7 @@ header p
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  height: 300px;
+  height: 200px;
 }
 
 #drugitekst
@@ -209,7 +216,7 @@ header p
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  height: 300px;
+  height: 200px;
 }
 
 #tecitekst
