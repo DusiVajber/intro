@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Northwell';
+  src: url('/fonts/Northwell.woff2') format('woff2'),
+       url('/fonts/Northwell.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#slika-bgbox {
+  box-shadow: 0 8px 32px rgba(80, 54, 31, 0.10), 0 1.5px 10.6px rgba(80,54,31,0.08);
+}
 body
 {
   margin: 0;
@@ -69,7 +80,7 @@ header p
 #uvod
 {
   display: flex;
-   
+  margin-bottom: 32px;
 }
 
 #deoslike
@@ -135,7 +146,6 @@ header p
 {
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
 }
 
 #nasloviprvitekst
@@ -222,4 +232,134 @@ header p
   font-size: 1.7rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #674222;
+}
+
+#tim {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff9f0;
+  margin-top: 40px;
+  box-shadow: 0 -16px 30px rgba(0, 0, 0, 0.08); /* shadow above */
+  position: relative;
+  z-index: 15;
+}
+
+#timnaslovholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+#timnaslov {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #674222;
+}
+
+.clantekst {
+  font-size: 2.5rem;
+  font-family: 'Northwell', Georgia, 'Times New Roman', Times, serif;
+  color: #50361f;
+  text-align: center;
+  margin: 24px 0px 0px 0px;
+}
+
+.clanopis {
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #50361f;
+  text-align: center;
+  margin: 0px 20px 20px 20px;
+}
+
+#clanovi
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.clan
+{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+footer {
+  height: 108px;
+  background-color: #674222;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+footer p
+{
+  color: #fff9f0;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: -16px;
+  width: 120%;
+  height: 16px;
+  pointer-events: none;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.36);
+  z-index: 2;
+}
+
+#aboutus::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: -16px;
+  width: 120%;
+  height: 16px;
+  pointer-events: none;
+  box-shadow: 0 16px 30px rgba(0,0,0,0.36);
+  z-index: 20;
+}
+
+.footerthird
+{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footersubtitle {
+  font-size: 1.2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fff9f0;
+  margin: 0;
+}
+
+.footertext
+{
+  font-size: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #fff9f0;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+#emailholder{
+  box-sizing: border-box;
+  padding-left: 160px;
+}
+
+#phonenumberholder{
+  box-sizing: border-box;
+  padding-right: 160px;
 }
