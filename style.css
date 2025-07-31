@@ -80,7 +80,7 @@ header p
 #uvod
 {
   display: flex;
-  margin-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 #deoslike
@@ -146,6 +146,7 @@ header p
 {
   display: flex;
   flex-direction: column;
+  padding-top: 0px;
 }
 
 #nasloviprvitekst
@@ -320,11 +321,11 @@ footer::before {
   content: "";
   position: absolute;
   left: -10%;
-  top: -16px;
+  top: 606px;
   width: 120%;
   height: 16px;
   pointer-events: none;
-  box-shadow: 0 16px 30px rgba(0,0,0,0.36);
+  box-shadow: 0 16px 16px rgba(0,0,0,0.08);
   z-index: 20;
 }
 
