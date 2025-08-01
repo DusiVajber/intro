@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-body
+body, html
 {
   overflow-x: hidden;
 }
@@ -49,7 +49,7 @@ body
 
 #slika
 {
-  width: 600px;
+  width: 80%;
   height: 450px;
   object-fit: cover;
   margin-top: 60px;
@@ -383,5 +383,27 @@ footer::before {
     max-width: 1280px;
     box-sizing: content-box;
     padding: 0 calc(50% - 640px);
+  }
+}
+
+@media only screen and (max-width: 1202px)
+{
+  #tecitekstholder
+  {
+    height: 220px;
+  }
+
+  #slika-bgbox
+  {
+    left: auto !important;
+    right: 60px !important;
+  }
+}
+
+@media only screen and (max-width: 1044px)
+{
+  #tecitekstholder
+  {
+    height: 230px;
   }
 }
