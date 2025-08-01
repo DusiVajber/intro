@@ -117,8 +117,9 @@ header p
   display: inline-block;
   margin-left: -170px;
   width: fit-content;
-  width: 534px;
+  width: 546px;
 }
+
 
 #deoslike
 {
@@ -405,5 +406,33 @@ footer::before {
   #tecitekstholder
   {
     height: 230px;
+  }
+  
+  #deoslike
+  {
+    width: 55%;
+  }
+
+  #slika
+  {
+    width: 87.27%;
+  }
+}
+
+@media only screen and (max-width: 936px)
+{
+  .break::after {
+  content: "";
+  display: block;
+  }
+  #uvodnitekst-white
+  {
+    margin-top: 167px !important;
+    left: -170px !important;
+  }
+ 
+  #slika-bgbox
+  {
+    
   }
 }

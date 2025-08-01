@@ -18,12 +18,12 @@
     <div id="deoslike">
       
       <img src="pictures/SpFrMuv.webp" alt="Uvod Image" id="slika" style="position: relative; z-index: 2;">
-      <p class="uvodnitekst" style="position: absolute; left: -170px;margin-top: 196.5px; margin-left: 100%; color: #fff9f0; z-index: 3;">stvorite digitalni identitet<br>povećajte &nbsp;privlačnost&nbsp;</p>
+      <p class="uvodnitekst" id="uvodnitekst-white" style="position: absolute; left: -170px;margin-top: 196.5px; margin-left: 100%; color: #fff9f0; z-index: 3; user-select: text;">stvorite <span class="break">digitalni</span> identitet,<br>povećajte &nbsp;privlačnost&nbsp;</p>
     </div>
     <div id="tekstualnideo">
       <div id="slika-bgbox" style="position: absolute; left: calc(60% + 160px); right: 50px; top: 304px; width: 280px; height: 192px; background: #fff9f0; z-index: -1;"></div>
       <div style="position: relative; width: fit-content;">
-        <p class="uvodnitekst" style="color: #50361f; z-index: 1;">stvorite digitalni identitet<br>povećajte <mark id="privlacnostmark">&nbsp;privlačnost&nbsp;</mark></p>
+        <p class="uvodnitekst nocopy" id="uvodnitekst-black" style="color: #50361f; z-index: 1; user-select: text; -webkit-user-select: text;">stvorite <span class="break">digitalni</span> identitet,<br>povećajte <mark id="privlacnostmark">&nbsp;privlačnost&nbsp;</mark></p>
       </div>
 <script>
   function updateWhiteTextClip() {
@@ -54,6 +54,18 @@
   }
   window.addEventListener('DOMContentLoaded', updateWhiteTextClip);
   window.addEventListener('resize', updateWhiteTextClip);
+</script>
+<script>
+  // Prevent copying from elements with .nocopy class
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.nocopy').forEach(function(el) {
+      el.addEventListener('copy', function(e) {
+        e.preventDefault();
+        alert('Copying is disabled.');
+      });
+    });
+  });
+</script>
 </script>
     </div>
   </div>
