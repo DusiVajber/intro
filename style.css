@@ -412,6 +412,10 @@ footer::before {
   {
     width: 55%;
   }
+  #tekstualnideo
+  {
+    width: 45%;
+  }
 
   #slika
   {
@@ -421,18 +425,76 @@ footer::before {
 
 @media only screen and (max-width: 936px)
 {
-  .break::after {
+  #breakk::after {
   content: "";
   display: block;
   }
+  .break::after {
+    content: "";
+    display: block;
+  }
   #uvodnitekst-white
   {
-    margin-top: 167px !important;
-    left: -170px !important;
+    display: none;
+    width: 0;
+    height: 0;
   }
- 
+  #uvodnitekst-black
+  {
+    width: 254.5px;
+    margin-left: 0;
+    overflow:visible;
+    margin-right: 60px;
+  }
+  #tekstualnideo
+  {
+    align-items: end;
+  }
+  #privlacnostmark
+  {
+    border-radius: 0;
+  }
   #slika-bgbox
   {
-    
+    right: 80px !important;
+  }
+}
+
+@media only screen and (max-width: 880px)
+{
+  #slika-bgbox
+  {
+    right: 36px !important;
+    width: 240px !important;
+    height: 148px !important;
+    top: 348px !important;
+  }
+}
+
+@media only screen and (max-width: 768px)
+{
+  #slika
+  {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  #deoslike
+  {
+    width: 0;
+  }
+  #tekstualnideo
+  {
+    width: 100%;
+    align-items: left;
+  }
+  .break::after, p.uvodnitekst
+  {
+    content: none;
+    display: none !important;
+  }
+  #uvodnitekstmali
+  {
+    display: block !important;
   }
 }
