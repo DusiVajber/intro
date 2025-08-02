@@ -144,7 +144,7 @@ header p
 
 #privlacnostmark
 {
-  background-color: #674222;
+  background-color: #50361f;
   color: white;
   border-radius: 3px;
 }
@@ -486,7 +486,12 @@ footer::before {
   #tekstualnideo
   {
     width: 100%;
-    align-items: left;
+    align-items: start;
+  }
+  #uvodnitekstmali
+  {
+    margin-left: 20px;
+    text-align: left;
   }
   .break::after, p.uvodnitekst
   {
@@ -497,4 +502,13 @@ footer::before {
   {
     display: block !important;
   }
+  #slika-bgbox{
+    top: 152px !important;
+    left: 340px !important;
+  }
+}
+
+@media only screen and (max-width: 620px)
+{
+  
 }
